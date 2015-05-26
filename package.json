@@ -1,0 +1,43 @@
+{
+  "name": "rev-file",
+  "version": "0.0.0",
+  "description": "Get the revved file path of a file",
+  "license": "MIT",
+  "repository": "sindresorhus/rev-file",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "rev",
+    "revving",
+    "web",
+    "file",
+    "name",
+    "filename",
+    "path",
+    "cache",
+    "caching",
+    "fs",
+    "hash",
+    "md5"
+  ],
+  "dependencies": {
+    "hasha": "^1.0.0",
+    "rev-hash": "^1.0.0",
+    "rev-path": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
