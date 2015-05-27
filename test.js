@@ -3,7 +3,7 @@ var test = require('ava');
 var revFile = require('./');
 var reRevved = /test\-[\d\w]{10}\.js/;
 
-test('async', function (t) {
+test(function (t) {
 	t.plan(3);
 
 	t.assert(reRevved.test(revFile.sync('test.js')));
