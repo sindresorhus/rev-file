@@ -1,15 +1,9 @@
-'use strict';
-var test = require('ava');
-var revFile = require('./');
-var reRevved = /test\-[\d\w]{10}\.js/;
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.plan(3);
+const reRevved = /test\-[\d\w]{10}\.js/;
 
-	t.assert(reRevved.test(revFile.sync('test.js')));
-
-	revFile('test.js', function (err, filepath) {
-		t.assert(!err, err);
-		t.assert(reRevved.test(filepath));
-	});
+test(async t => {
+	t.true(reRevved.test(fn.sync('test.js')));
+	t.true(reRevved.test(await fn('test.js')));
 });

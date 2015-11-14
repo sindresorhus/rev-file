@@ -15,11 +15,24 @@ $ npm install --save rev-file
 ## Usage
 
 ```js
-var revFile = require('rev-file');
+const revFile = require('rev-file');
 
-revFile('src/unicorn.png');
-//=> 'src/unicorn-bb9d8fe615.png'
+revFile('src/unicorn.png').then(filpath => {
+	console.log(filepath);
+	//=> 'src/unicorn-bb9d8fe615.png'
+});
 ```
+
+
+## API
+
+### revFile(filepath)
+
+Returns a promise for a revved filepath.
+
+### revFile.sync(filepath)
+
+Return a revved filepath.
 
 
 ## License
