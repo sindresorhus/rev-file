@@ -1,6 +1,6 @@
 {
   "name": "rev-file",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Get the revved file path of a file",
   "license": "MIT",
   "repository": "sindresorhus/rev-file",
