@@ -17,7 +17,7 @@ $ npm install --save rev-file
 ```js
 const revFile = require('rev-file');
 
-revFile('src/unicorn.png').then(filpath => {
+revFile('src/unicorn.png').then(filepath => {
 	console.log(filepath);
 	//=> 'src/unicorn-bb9d8fe615.png'
 });
