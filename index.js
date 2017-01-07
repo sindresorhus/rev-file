@@ -1,20 +1,19 @@
 'use strict';
-var fs = require('fs');
-var revHash = require('rev-hash');
-var revPath = require('rev-path');
-var hasha = require('hasha');
+const fs = require('fs');
+const revHash = require('rev-hash');
+const revPath = require('rev-path');
+const hasha = require('hasha');
 
-module.exports = function (pth) {
+module.exports = pth => {
 	if (typeof pth !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	return hasha.fromFile(pth, {algorithm: 'md5'}).then(function (hash) {
-		return revPath(pth, hash.slice(0, 10));
-	});
+	return hasha.fromFile(pth, {algorithm: 'md5'})
+		.then(hash => revPath(pth, hash.slice(0, 10)));
 };
 
-module.exports.sync = function (pth) {
+module.exports.sync = pth => {
 	if (typeof pth !== 'string') {
 		throw new TypeError('Expected a string');
 	}

@@ -4,6 +4,6 @@ import m from './';
 const reRevved = /test-[\d\w]{10}\.js/;
 
 test(async t => {
-	t.true(reRevved.test(m.sync('test.js')));
-	t.true(reRevved.test(await m('test.js')));
+	t.regex(m.sync('test.js'), reRevved);
+	t.regex(await m('test.js'), reRevved);
 });

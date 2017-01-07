@@ -2,7 +2,7 @@
 
 > Get the revved file path of a file
 
-Reads the file, MD5 hashes it, truncates the hash to [10 characters](https://github.com/sindresorhus/rev-hash), appends it to the filename, and returns the modified path.
+Reads the file, MD5-hashes it, truncates the hash to [10 characters](https://github.com/sindresorhus/rev-hash), appends it to the filename, and returns the modified path.
 
 
 ## Install
@@ -32,9 +32,9 @@ Returns a promise for a revved filepath.
 
 ### revFile.sync(filepath)
 
-Return a revved filepath.
+Returns a revved filepath.
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
