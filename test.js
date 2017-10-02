@@ -1,5 +1,5 @@
 import test from 'ava';
-import m from './';
+import m from '.';
 
 const reRevved = /test-[\d\w]{10}\.js/;
 

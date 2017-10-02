@@ -8,7 +8,7 @@ Reads the file, MD5-hashes it, truncates the hash to [10 characters](https://git
 ## Install
 
 ```
-$ npm install --save rev-file
+$ npm install rev-file
 ```
 
 
@@ -28,7 +28,7 @@ revFile('src/unicorn.png').then(filepath => {
 
 ### revFile(filepath)
 
-Returns a promise for a revved filepath.
+Returns a `Promise` for a revved filepath.
 
 ### revFile.sync(filepath)
 

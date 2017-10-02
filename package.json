@@ -1,47 +1,44 @@
 {
-  "name": "rev-file",
-  "version": "2.0.0",
-  "description": "Get the revved file path of a file",
-  "license": "MIT",
-  "repository": "sindresorhus/rev-file",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "rev",
-    "revving",
-    "web",
-    "file",
-    "name",
-    "filename",
-    "path",
-    "cache",
-    "caching",
-    "fs",
-    "hash",
-    "md5"
-  ],
-  "dependencies": {
-    "hasha": "^2.0.2",
-    "rev-hash": "^1.0.0",
-    "rev-path": "^1.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
-  }
+	"name": "rev-file",
+	"version": "2.0.0",
+	"description": "Get the revved file path of a file",
+	"license": "MIT",
+	"repository": "sindresorhus/rev-file",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"rev",
+		"revving",
+		"web",
+		"file",
+		"name",
+		"filename",
+		"path",
+		"cache",
+		"caching",
+		"fs",
+		"hash",
+		"md5"
+	],
+	"dependencies": {
+		"hasha": "^2.0.2",
+		"rev-hash": "^1.0.0",
+		"rev-path": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }
