@@ -1,4 +1,4 @@
-# rev-file [![Build Status](https://travis-ci.org/sindresorhus/rev-file.svg?branch=master)](https://travis-ci.org/sindresorhus/rev-file)
+# rev-file
 
 > Get the revved file path of a file
 
