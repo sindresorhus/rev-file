@@ -1,9 +1,12 @@
 import test from 'ava';
-import m from '.';
+import {revisionFile, revisionFileSync} from './index.js';
 
-const reRevved = /test-[\d\w]{10}\.js/;
+const revisionRegex = /test-[\d\w]{10}\.js/;
 
-test(async t => {
-	t.regex(m.sync('test.js'), reRevved);
-	t.regex(await m('test.js'), reRevved);
+test('async', async t => {
+	t.regex(await revisionFile('test.js'), revisionRegex);
+});
+
+test('sync', t => {
+	t.regex(revisionFileSync('test.js'), revisionRegex);
 });

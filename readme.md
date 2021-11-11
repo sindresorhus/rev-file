@@ -4,37 +4,27 @@
 
 Reads the file, MD5-hashes it, truncates the hash to [10 characters](https://github.com/sindresorhus/rev-hash), appends it to the filename, and returns the modified path.
 
-
 ## Install
 
+```sh
+npm install rev-file
 ```
-$ npm install rev-file
-```
-
 
 ## Usage
 
 ```js
-const revFile = require('rev-file');
+import {revisionFile} from 'rev-file';
 
-revFile('src/unicorn.png').then(filepath => {
-	console.log(filepath);
-	//=> 'src/unicorn-bb9d8fe615.png'
-});
+console.log(await revisionFile('src/unicorn.png'));
+//=> 'src/unicorn-bb9d8fe615.png'
 ```
-
 
 ## API
 
 ### revFile(filepath)
 
-Returns a `Promise` for a revved filepath.
+Returns a `Promise` for a revved file path.
 
-### revFile.sync(filepath)
+### revFileSync(filepath)
 
-Returns a revved filepath.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+Returns a revved file path.

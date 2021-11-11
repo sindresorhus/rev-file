@@ -4,13 +4,16 @@
 	"description": "Get the revved file path of a file",
 	"license": "MIT",
 	"repository": "sindresorhus/rev-file",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=4"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -33,12 +36,12 @@
 		"md5"
 	],
 	"dependencies": {
-		"hasha": "^3.0.0",
-		"rev-hash": "^2.0.0",
-		"rev-path": "^1.0.0"
+		"hasha": "^5.2.2",
+		"rev-hash": "^4.0.0",
+		"rev-path": "^3.0.0"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"xo": "*"
+		"ava": "^3.15.0",
+		"xo": "^0.46.4"
 	}
 }
