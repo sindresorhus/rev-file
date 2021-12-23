@@ -21,10 +21,10 @@ console.log(await revisionFile('src/unicorn.png'));
 
 ## API
 
-### revFile(filepath)
+### revisionFile(filepath)
 
 Returns a `Promise` for a revved file path.
 
-### revFileSync(filepath)
+### revisionFileSync(filepath)
 
 Returns a revved file path.
